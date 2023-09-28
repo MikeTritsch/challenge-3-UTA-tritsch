@@ -33,6 +33,7 @@ function generatePassword() {
     var lowAlphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
     var specialChar = ["!","#", "$", "%", "&", "(", ")", "*", "+","-","/",":",";","<","=",">","?","@","[","]","^","_","`","{","|","}","~"]
     var objectArray = [];
+    var passArr = [];
 
     if (includeNum == true) {
         objectArray.push(...numberArray);
@@ -51,8 +52,8 @@ function generatePassword() {
     }
 
     for (x = 0; x < numChar; x++) {
-        var chosenArr = objectArray[Math.floor(Math.random() * objectArray.length)];
-        var newArr = [chosenArr];
+        passArr.push(objectArray[Math.floor(Math.random() * objectArray.length)]);
+        var password = passArr.join("");
     }
 
     return password;
