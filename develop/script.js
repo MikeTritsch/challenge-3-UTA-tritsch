@@ -52,11 +52,12 @@ function generatePassword() {
 
     for (x = 0; x < numChar; x++) {
         var chosenArr = objectArray[Math.floor(Math.random() * objectArray.length)];
-        console.log(chosenArr);
+        var newArr = [chosenArr];
     }
 
     return password;
 }
+
 
 
 
