@@ -21,6 +21,8 @@ function generatePassword() {
         return;
     }
 
+    console.log(numChar);
+
     var includeNum = window.confirm("Would you like to add numbers?");
     var includeUpper = window.confirm("Would you like to use upper-case letters?");
     var includeLower = window.confirm("Would you like to use lower-case letters?");
@@ -48,7 +50,7 @@ function generatePassword() {
         objectArray.push(...specialChar);
     }
 
-    for (x = 0; x < numChar.length; x++) {
+    for (x = 0; x < numChar; x++) {
         var chosenArr = objectArray[Math.floor(Math.random() * objectArray.length)];
         console.log(chosenArr);
     }
