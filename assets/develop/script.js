@@ -10,10 +10,11 @@ function writePassword() {
 
 }
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword); // Do not touch
-// The button will run the password function
+generateBtn.addEventListener("click", writePassword);
+
 
 function generatePassword() {
+    // MY CODE STARTS HERE
     var numChar = window.prompt("Enter desired password length (Min. of 8, Max of 128)");
 
     if (numChar < 8 || numChar > 128) {
@@ -52,10 +53,11 @@ function generatePassword() {
     }
 
     for (x = 0; x < numChar; x++) {
-        passArr.push(objectArray[Math.floor(Math.random() * objectArray.length)]);
+        passArr.push(objectArray[Math.floor(Math.random() * objectArray.length)]); // Courtesy of CSS Tricks
         var password = passArr.join("");
     }
 
+    // MY CODE ENDS HERE
     return password;
 }
 
