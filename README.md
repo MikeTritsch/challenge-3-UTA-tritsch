@@ -27,6 +27,7 @@ From there, click the "Generate Password" button.
 A window message will pop up prompting you to enter your desired password length (Note: Must be between 8 and 128, otherwise, the generator will reset)
 
 A series of confirm prompts will then pop up as you answer password specific questions (Note: Clicking "Cancel" is equal to answering "No")
+
 ![Functionality Gif](./assets/style/images/functionality.gif)
 
 After entering your criteria, your new password will generate within the text box in the middle of the page!
